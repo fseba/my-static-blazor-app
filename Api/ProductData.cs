@@ -49,7 +49,7 @@ namespace Api
 
         public Task<Product> AddProduct(Product product)
         {
-            product.Id = GetRandomInt();
+            product.Id = GetRandomInt(); 
             products.Add(product);
             return Task.FromResult(product);
         }
